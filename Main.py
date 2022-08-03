@@ -17,8 +17,7 @@ class Evaluate:
     self.top = -1
     self.size_of_stack = size
     self.stack = []
-
-
+    
   def isEmpty(self):
     """
     Check whether the stack is empty.
@@ -41,8 +40,7 @@ class Evaluate:
     # Write your code here
     if not self.isEmpty():
       self.stack.pop()
-
-
+  
   def push(self, operand):
     """
     Push the operand to stack if the stack is not full.
@@ -74,9 +72,7 @@ class Evaluate:
       return True
     else:
       return False
-
-
-  def evaluate_postfix_expression(self, expression):
+    def evaluate_postfix_expression(self, expression):
     """
     Evaluate the postfix expression
     Arguments:
@@ -116,4 +112,5 @@ if evaluate.validate_postfix_expression(tokens):
     print(evaluate.evaluate_postfix_expression(tokens))
 else:
     print('Invalid postfix expression')
-
+    
+    
